@@ -1,0 +1,5 @@
+C:\SpecFlowProject-API\obj\Debug\net6.0\SpecFlowProject-API.csproj.AssemblyReference.cache
+C:\SpecFlowProject-API\obj\Debug\net6.0\SpecFlowProject-API.GeneratedMSBuildEditorConfig.editorconfig
+C:\SpecFlowProject-API\obj\Debug\net6.0\SpecFlowProject-API.AssemblyInfoInputs.cache
+C:\SpecFlowProject-API\obj\Debug\net6.0\SpecFlowProject-API.AssemblyInfo.cs
+C:\SpecFlowProject-API\obj\Debug\net6.0\SpecFlowProject-API.csproj.CoreCompileInputs.cache
