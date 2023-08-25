@@ -1,0 +1,45 @@
+{"Timestamp":"2023-08-23T11:53:23.5878033+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T11:53:23.6165614+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T11:53:23.6983942+02:00","Level":"Information","MessageTemplate":"Response status is successful (Status Code: {StatusCode})","Properties":{"StatusCode":201}}
+{"Timestamp":"2023-08-23T11:58:41.5994569+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T11:58:41.6324748+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:03:40.3423380+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:03:40.3664526+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:07:50.7564415+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:07:50.7820824+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:11:18.3279775+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:11:18.3522747+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:11:37.2629644+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:11:37.2874237+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:12:52.3736566+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:12:52.4180846+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:13:38.2501042+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:13:38.2758958+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:15:23.9690852+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:15:23.9940698+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:15:46.3965240+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:15:46.4209506+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:15:59.6599967+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:15:59.6949845+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:17:27.1106198+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:17:27.1664664+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:20:04.9235498+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:20:04.9488519+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:21:03.2227761+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:21:03.2488198+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:22:18.4766251+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:22:18.5011167+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:28:16.7054539+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:28:16.7303065+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:29:57.5178699+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:29:57.5441599+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:32:48.2613417+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:32:48.2958199+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:34:02.9545397+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:34:02.9789396+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:35:13.8878676+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:35:13.9124126+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T12:36:08.9645578+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T12:36:08.9891993+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-23T13:02:27.1303360+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-23T13:02:27.1555163+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}

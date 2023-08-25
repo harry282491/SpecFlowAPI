@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ProfileStudio_API Test Case Report</title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa  dark">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">ProfileStudio_API Test Case Report</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">8/24/2023 10:02:57 PM</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																				<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">CategoryE2E</p> 
+								<p class="duration text-sm">0h:0m:0s+179ms</p> 
+								<span class="datetime">22:02:57 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">CategoryE2E</h5>
+										<span class='badge badge-success'>8/24/2023 10:02:57 PM</span>
+										<span class='badge badge-danger'>8/24/2023 10:02:57 PM</span>
+										<span class='badge badge-default'>0h:0m:0s+179ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="mt-4">
+	
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">1 Check data after POST call</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the user sends the post request with url</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Request JSON: {"name":"Category_36850520","categoryId":100312001}									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Response JSON: {"categoryId":100312001,"name":"Category_36850520","locked":false}									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">user gets a success response</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the response contains the correct name</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+			</div>
+	</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">2 Get data by category ID and validate name</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the user sends a GET request with the category ID</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Request JSON:									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Response JSON: {"categoryId":100312001,"name":"Category_36850520","locked":false}									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the Get response contains the correct name and category ID</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+			</div>
+	</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">3 Update category by ID and validate name</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the user sends a PUT request with the category ID</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Request JSON: {"name":"Category_410323925","categoryId":100312001}									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Response JSON:									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the user does a GET response after update by ID and validates the name</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+			</div>
+	</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">4 Delete category by ID and validate the deletion</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the user sends a Delete request with the category ID and do an GET to confirm</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Request JSON:									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Response JSON:									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">5 NOT OK Case - Delete the non exisitng categeory</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the user sends a Delete request with the non exisiting category ID  and validate</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Request JSON:									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Response JSON: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Not Found","status":404,"traceId":"00-b342e7152a222ad4b666261be1244bcc-9dbe3091c8569762-00"}									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">6 NOT OK Case - Create a category using exisiting Name</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the user sends a Pose request with the an exisiting category Name and validate</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Request JSON: {"name":"Schneider Electric","categoryId":674542726}									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Response JSON:									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">7 Get all category data and validate the datatypes</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+																	</div>
+				</div>
+
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">the user sends a get all request and validate the datatypes</div>
+						<div class="status-avatar float-right pass-bg">
+							<i class="fa fa-check text-white"></i>
+                        </div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+						
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Request JSON:									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>22:02:57</td>
+				<td>
+Response JSON: [{"categoryId":1,"name":"Uncategorized Manufacturer","locked":true},{"categoryId":2,"name":"Schneider Electric","locked":true},{"categoryId":3,"name":"string","locked":true},{"categoryId":6,"name":"Foster","locked":true},{"categoryId":8,"name":"Dolly","locked":true},{"categoryId":10,"name":"HolaCola","locked":true},{"categoryId":11,"name":"HolaCola3","locked":true},{"categoryId":13,"name":"HolaCola34","locked":true},{"categoryId":14,"name":"Gail","locked":true},{"categoryId":23,"name":"HolaCola3455","locked":true},{"categoryId":1001,"name":"Autoamte","locked":true},{"categoryId":2244,"name":"Category 3972101","locked":false},{"categoryId":2312,"name":"FirstCategoryHari2213123213s","locked":false},{"categoryId":3801,"name":"Category 9119866","locked":false},{"categoryId":6264,"name":"Category4175299","locked":false},{"categoryId":10001,"name":"FirstCategoryHari2s","locked":false},{"categoryId":15575,"name":"Category 1152466","locked":false},{"categoryId":18148,"name":"Category 9136398","locked":false},{"categoryId":21592,"name":"Category 7697018","locked":false},{"categoryId":27990,"name":"Category 9090636","locked":false},{"categoryId":30096,"name":"Category 9088917","locked":false},{"categoryId":34495,"name":"Category 1343172","locked":false},{"categoryId":42535,"name":"Category 3110636","locked":false},{"categoryId":51068,"name":"Category 963062","locked":false},{"categoryId":52315,"name":"Category 4657228","locked":false},{"categoryId":55180,"name":"Category 8684186","locked":false},{"categoryId":66727,"name":"Category 9737240","locked":false},{"categoryId":69048,"name":"Category 4995641","locked":false},{"categoryId":72995,"name":"Category 8656979","locked":false},{"categoryId":73179,"name":"Category 9262326","locked":false},{"categoryId":75824,"name":"Category 851534","locked":false},{"categoryId":84345,"name":"Category 7218145","locked":false},{"categoryId":86975,"name":"Category 4235517","locked":false},{"categoryId":87698,"name":"Category 7644860","locked":false},{"categoryId":1000000,"name":"Hariharan","locked":true},{"categoryId":2101254,"name":"FirstCategoryHari2","locked":false},{"categoryId":2312211,"name":"21","locked":true},{"categoryId":5231522,"name":"dddd","locked":true},{"categoryId":5231523,"name":"FirstCategoryHari2s55","locked":false},{"categoryId":5231524,"name":"FirstCategoryHari2s985","locked":false},{"categoryId":5231525,"name":"FirstCategoryHari2s1254","locked":false},{"categoryId":5231526,"name":"FirstCategoryHari2s532325","locked":false},{"categoryId":5231527,"name":"Category_785534","locked":false},{"categoryId":5231528,"name":"Category_724522","locked":false},{"categoryId":5231529,"name":"Category_500896","locked":false},{"categoryId":5231530,"name":"Category_128283841","locked":false},{"categoryId":5231531,"name":"Category_156853074","locked":false},{"categoryId":5231532,"name":"Category_859839861","locked":false},{"categoryId":5231533,"name":"Category_63497573","locked":false},{"categoryId":5231534,"name":"Category_438085227","locked":false},{"categoryId":5231535,"name":"Category_855045226","locked":false},{"categoryId":5231536,"name":"Category_197181134","locked":false},{"categoryId":5231537,"name":"Category_611262353","locked":false},{"categoryId":5231538,"name":"Category_308471262","locked":false},{"categoryId":5231539,"name":"Category_591444028","locked":false},{"categoryId":5231540,"name":"Category_725207767","locked":false},{"categoryId":5231541,"name":"Category_414646632","locked":false},{"categoryId":5231542,"name":"Category_188239447","locked":false},{"categoryId":5231543,"name":"Category_934548913","locked":false},{"categoryId":5231544,"name":"Category_445551258","locked":false},{"categoryId":5231545,"name":"Category_609978443","locked":false},{"categoryId":5231546,"name":"Category_166522709","locked":false},{"categoryId":5231547,"name":"Category_885044916","locked":false},{"categoryId":5231548,"name":"Category_360459952","locked":false},{"categoryId":8636288,"name":"Category_858279494","locked":false},{"categoryId":23124511,"name":"HLHLHsL","locked":false},{"categoryId":31709051,"name":"Category_495813095","locked":false},{"categoryId":43671783,"name":"Category_551040216","locked":false},{"categoryId":65714725,"name":"Category_238380534","locked":false},{"categoryId":72186516,"name":"Category_671730829","locked":false},{"categoryId":72365120,"name":"Category_856497159","locked":false},{"categoryId":77326267,"name":"Category_195595399","locked":false},{"categoryId":81957287,"name":"Category_759101380","locked":false},{"categoryId":92329460,"name":"Category_718298300","locked":false},{"categoryId":99659815,"name":"Category_341819826","locked":false},{"categoryId":100034366,"name":"Category_484306416","locked":false},{"categoryId":104688133,"name":"Category_808880589","locked":false},{"categoryId":105945608,"name":"Category_455485366","locked":false},{"categoryId":106961653,"name":"Category_130313867","locked":false},{"categoryId":123324022,"name":"Category_655102858","locked":false},{"categoryId":128831043,"name":"Category_198889619","locked":false},{"categoryId":131499919,"name":"Category_857774262","locked":false},{"categoryId":133009393,"name":"Category_607252095","locked":false},{"categoryId":134813816,"name":"Category_270184653","locked":false},{"categoryId":138429040,"name":"Category_767238719","locked":false},{"categoryId":143278015,"name":"Category_771747935","locked":false},{"categoryId":143295257,"name":"Category_240389130","locked":false},{"categoryId":154762915,"name":"Category_133730013","locked":false},{"categoryId":158457888,"name":"Category_109507511","locked":false},{"categoryId":163410333,"name":"Category_507055528","locked":false},{"categoryId":176116045,"name":"Category_375467170","locked":false},{"categoryId":178620983,"name":"Category_283231933","locked":false},{"categoryId":183603744,"name":"Category_328518602","locked":false},{"categoryId":193420769,"name":"Category_754203629","locked":false},{"categoryId":197349687,"name":"Category_976665792","locked":false},{"categoryId":202201549,"name":"Category_590234190","locked":false},{"categoryId":202475352,"name":"Category_174037086","locked":false},{"categoryId":203885765,"name":"Category_491170109","locked":false},{"categoryId":207876049,"name":"Category_112840862","locked":false},{"categoryId":211528864,"name":"Category_116933280","locked":false},{"categoryId":219211565,"name":"Category_835889808","locked":false},{"categoryId":224083152,"name":"Category_142166058","locked":false},{"categoryId":226526053,"name":"Category_386755089","locked":false},{"categoryId":228949083,"name":"Category_767868445","locked":false},{"categoryId":231222111,"name":"HLHLHL","locked":false},{"categoryId":235997870,"name":"Category_356146366","locked":false},{"categoryId":244342216,"name":"Category_708168698","locked":false},{"categoryId":248043418,"name":"Category_998791565","locked":false},{"categoryId":248350699,"name":"Category_784944940","locked":false},{"categoryId":248697961,"name":"Category_987253547","locked":false},{"categoryId":249638549,"name":"Category_459226083","locked":false},{"categoryId":258884674,"name":"Category_266330808","locked":false},{"categoryId":292301077,"name":"Category_911689058","locked":false},{"categoryId":302868083,"name":"Category_185676130","locked":false},{"categoryId":325711384,"name":"Category_171010573","locked":false},{"categoryId":326124189,"name":"Category_550395909","locked":false},{"categoryId":336601003,"name":"Category_206461049","locked":false},{"categoryId":336828986,"name":"Category_879979528","locked":false},{"categoryId":341340183,"name":"Category_3587141","locked":false},{"categoryId":344561922,"name":"Category_466599370","locked":false},{"categoryId":352129158,"name":"Category_894494018","locked":false},{"categoryId":379599223,"name":"Category_95264856","locked":false},{"categoryId":396827948,"name":"Category_31033582","locked":false},{"categoryId":400163680,"name":"Category_635312485","locked":false},{"categoryId":402320656,"name":"Category_864493394","locked":false},{"categoryId":408827496,"name":"Category_958251654","locked":false},{"categoryId":413033405,"name":"Category_334451334","locked":false},{"categoryId":416929954,"name":"Category_918299540","locked":false},{"categoryId":419349172,"name":"Category_630064877","locked":false},{"categoryId":421851594,"name":"Category_645339183","locked":false},{"categoryId":436558334,"name":"Category_731779415","locked":false},{"categoryId":436798624,"name":"Category_932764038","locked":false},{"categoryId":436882227,"name":"Category_65835004","locked":false},{"categoryId":437624642,"name":"Category_124162179","locked":false},{"categoryId":438042858,"name":"Category_270499363","locked":false},{"categoryId":439255752,"name":"Category_862431090","locked":false},{"categoryId":442788778,"name":"Category_422865146","locked":false},{"categoryId":448118014,"name":"Category_216097731","locked":false},{"categoryId":461512451,"name":"Category_626247081","locked":false},{"categoryId":488083878,"name":"Category_572811115","locked":false},{"categoryId":498507031,"name":"Category_688335365","locked":false},{"categoryId":498517992,"name":"Category_306695281","locked":false},{"categoryId":502727285,"name":"Category_182619317","locked":false},{"categoryId":511882297,"name":"Category_837426854","locked":false},{"categoryId":528377213,"name":"Category_4168423","locked":false},{"categoryId":528575420,"name":"Category_379099077","locked":false},{"categoryId":528646858,"name":"Category_884897183","locked":false},{"categoryId":528838360,"name":"Category_546209337","locked":false},{"categoryId":534521812,"name":"Category_131994645","locked":false},{"categoryId":537380419,"name":"Category_436693206","locked":false},{"categoryId":551712394,"name":"Category_470133221","locked":false},{"categoryId":552675923,"name":"Category_257722685","locked":false},{"categoryId":554987845,"name":"Category_298782572","locked":false},{"categoryId":559448210,"name":"Category_858518696","locked":false},{"categoryId":561401662,"name":"Category_42216858","locked":false},{"categoryId":562332868,"name":"Category_302993680","locked":false},{"categoryId":563652133,"name":"Category_598896002","locked":false},{"categoryId":567896805,"name":"Category_697778232","locked":false},{"categoryId":571865760,"name":"Category_364220176","locked":false},{"categoryId":573179506,"name":"Category_140036869","locked":false},{"categoryId":574702188,"name":"Category_119058280","locked":false},{"categoryId":585550157,"name":"Category_628971362","locked":false},{"categoryId":586780219,"name":"Category_418551842","locked":false},{"categoryId":598388399,"name":"Category_903005720","locked":false},{"categoryId":604327486,"name":"Category_532490756","locked":false},{"categoryId":615600650,"name":"Category_299218858","locked":false},{"categoryId":616961955,"name":"Category_100524040","locked":false},{"categoryId":629701151,"name":"Category_297067003","locked":false},{"categoryId":631094530,"name":"Category_586945389","locked":false},{"categoryId":638692588,"name":"Category_82964356","locked":false},{"categoryId":666547844,"name":"Category_929928994","locked":false},{"categoryId":669318261,"name":"Category_622046581","locked":false},{"categoryId":688819724,"name":"Category_175557666","locked":false},{"categoryId":699020886,"name":"Category_22354424","locked":false},{"categoryId":716094541,"name":"Category_882281920","locked":false},{"categoryId":718616659,"name":"Category_257172108","locked":false},{"categoryId":728888770,"name":"Category_90408959","locked":false},{"categoryId":734841111,"name":"Category_582232863","locked":false},{"categoryId":747004122,"name":"Category_881916201","locked":false},{"categoryId":754673376,"name":"Category_672499276","locked":false},{"categoryId":761982822,"name":"Category_102362214","locked":false},{"categoryId":767113336,"name":"Category_977139804","locked":false},{"categoryId":771340021,"name":"Category_927946841","locked":false},{"categoryId":772922440,"name":"Category_570111514","locked":false},{"categoryId":787232550,"name":"Category_172016458","locked":false},{"categoryId":808102248,"name":"Category_809520966","locked":false},{"categoryId":808341156,"name":"Category_161926199","locked":false},{"categoryId":820421649,"name":"Category_523394003","locked":false},{"categoryId":821620496,"name":"Category_890778487","locked":false},{"categoryId":829929980,"name":"Category_780818344","locked":false},{"categoryId":832016138,"name":"Category_232585948","locked":false},{"categoryId":833343475,"name":"Category_884048793","locked":false},{"categoryId":850585975,"name":"Category_532227639","locked":false},{"categoryId":851052359,"name":"Category_988290335","locked":false},{"categoryId":861628472,"name":"Category_742585655","locked":false},{"categoryId":866954125,"name":"Category_301769762","locked":false},{"categoryId":871604279,"name":"Category_799719169","locked":false},{"categoryId":872619297,"name":"Category_294871748","locked":false},{"categoryId":879906825,"name":"Category_181961182","locked":false},{"categoryId":883898989,"name":"Category_228238817","locked":false},{"categoryId":897945277,"name":"Category_675257086","locked":false},{"categoryId":902550812,"name":"Category_88017370","locked":false},{"categoryId":909552774,"name":"Category_114163155","locked":false},{"categoryId":910239316,"name":"Category_99782668","locked":false},{"categoryId":916918113,"name":"Category_923834103","locked":false},{"categoryId":921102457,"name":"Category_340824720","locked":false},{"categoryId":922594115,"name":"Category_107721244","locked":false},{"categoryId":933388207,"name":"Category_84352403","locked":false},{"categoryId":936779998,"name":"Category_349510826","locked":false},{"categoryId":945685022,"name":"Category_482105585","locked":false},{"categoryId":950543900,"name":"Category_684432296","locked":false},{"categoryId":958162737,"name":"Category_740560932","locked":false},{"categoryId":958517626,"name":"Category_656759889","locked":false},{"categoryId":967529313,"name":"Category_725290607","locked":false},{"categoryId":969099740,"name":"Category_208303130","locked":false},{"categoryId":974724319,"name":"Category_569265590","locked":false},{"categoryId":975924347,"name":"Category_749244965","locked":false},{"categoryId":984543921,"name":"Category_49848351","locked":false},{"categoryId":991054504,"name":"Category_511385854","locked":false},{"categoryId":991210142,"name":"Category_315280483","locked":false}]									</td>
+			</tr>
+	</tbody>
+</table>
+											</div>
+				</div>
+			</div>
+	</div>
+			</div>
+	</div>
+
+</div>
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-sm-12 col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='parent-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='100%'>
+	                    <b>1</b> tests passed
+                    </small></div>
+	                <div>
+	                    <small data-tooltip='0%'><b>0</b> tests failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Steps</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='child-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='100%'><b>11</b> steps passed</small></div>
+	                <div>
+	                    <small data-tooltip='0%'><b>0</b> steps failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+			</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light">1</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>100%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Steps</h6>
+							<h2 class="font-size-28 font-weight-light">11</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>100%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Start</h6>
+							<h6 class="font-weight-light">8/24/2023 10:02:57 PM</h6>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Duration</h6>
+							<h6 class="font-weight-light">00:00:00.1962508</h6>
+							<span class="text-semibold text-danger font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+							</div>
+</div>
+<script>
+	var statusGroup = {
+    parentCount: 1,
+		passParent: 1,
+		failParent: 0,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 0,
+		childCount: 11,
+		passChild: 11,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+	};
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>

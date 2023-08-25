@@ -1,0 +1,14 @@
+{"Timestamp":"2023-08-25T10:37:33.9669548+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-25T10:37:33.9955198+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-25T10:39:54.3789279+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-25T10:39:54.4056426+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-25T10:42:25.9933271+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-25T10:42:26.0183286+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-25T10:45:41.0555270+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-25T10:45:41.0828336+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-25T10:57:29.8414960+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-25T10:57:29.8680987+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-25T10:57:29.9526592+02:00","Level":"Information","MessageTemplate":"The response indicates success (HTTP 201 Created)."}
+{"Timestamp":"2023-08-25T11:01:15.7637013+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-25T11:01:15.7886002+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-25T11:01:15.8710358+02:00","Level":"Information","MessageTemplate":"The response indicates success (HTTP 201 Created)."}

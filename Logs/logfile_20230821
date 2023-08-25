@@ -1,0 +1,38 @@
+{"Timestamp":"2023-08-21T22:36:49.8337082+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T22:36:58.1922005+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T22:37:00.4386772+02:00","Level":"Information","MessageTemplate":"Test Step Passed | the user sends the post request with url"}
+{"Timestamp":"2023-08-21T22:37:57.9123164+02:00","Level":"Information","MessageTemplate":"Test Step Passed | user gets a success response"}
+{"Timestamp":"2023-08-21T22:38:48.4045852+02:00","Level":"Information","MessageTemplate":"Test Step Passed | the response contains the correct name"}
+{"Timestamp":"2023-08-21T22:44:08.3779134+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T22:44:08.4127592+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T22:44:08.5505475+02:00","Level":"Information","MessageTemplate":"Test Step Passed | the user sends the post request with url"}
+{"Timestamp":"2023-08-21T22:44:08.5664959+02:00","Level":"Information","MessageTemplate":"Test Step Passed | user gets a success response"}
+{"Timestamp":"2023-08-21T22:44:08.5680948+02:00","Level":"Information","MessageTemplate":"Test Step Passed | the response contains the correct name"}
+{"Timestamp":"2023-08-21T22:54:57.8472451+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T22:54:57.8755346+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T22:54:57.9723160+02:00","Level":"Error","MessageTemplate":"Test Step Failed | Object reference not set to an instance of an object."}
+{"Timestamp":"2023-08-21T22:56:16.8920772+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T22:56:16.9455792+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T23:01:16.4907481+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T23:01:16.5302985+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T23:01:16.6409811+02:00","Level":"Error","MessageTemplate":"Test Step Failed | Object reference not set to an instance of an object."}
+{"Timestamp":"2023-08-21T23:01:36.8215214+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T23:01:36.8538879+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T23:01:36.9523121+02:00","Level":"Error","MessageTemplate":"Test Step Failed | Object reference not set to an instance of an object."}
+{"Timestamp":"2023-08-21T23:03:06.7249239+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T23:03:06.7511164+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T23:03:06.8225181+02:00","Level":"Information","MessageTemplate":"Test Step Passed | the user sends the post request with url"}
+{"Timestamp":"2023-08-21T23:03:06.8364774+02:00","Level":"Information","MessageTemplate":"Test Step Passed | user gets a success response"}
+{"Timestamp":"2023-08-21T23:03:06.8374451+02:00","Level":"Information","MessageTemplate":"Test Step Passed | the response contains the correct name"}
+{"Timestamp":"2023-08-21T23:04:02.8871247+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T23:04:02.9123035+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T23:04:02.9847398+02:00","Level":"Information","MessageTemplate":"Test Step Passed | the user sends the post request with url"}
+{"Timestamp":"2023-08-21T23:04:03.0189946+02:00","Level":"Error","MessageTemplate":"Test Step Failed |   Expected: Accepted\r\n  But was:  Created\r\n"}
+{"Timestamp":"2023-08-21T23:06:56.8707860+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T23:06:56.8996189+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T23:20:11.6071378+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T23:20:11.6855426+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T23:20:11.9353029+02:00","Level":"Information","MessageTemplate":"Test Step Passed | the user sends the post request with url"}
+{"Timestamp":"2023-08-21T23:23:46.4416629+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-21T23:23:46.4954533+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-21T23:25:03.7951687+02:00","Level":"Information","MessageTemplate":"Test Step Passed | the user sends the post request with url"}

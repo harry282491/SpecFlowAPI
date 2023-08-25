@@ -1,0 +1,104 @@
+{"Timestamp":"2023-08-24T14:28:43.5447524+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T14:28:43.5987765+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T14:29:11.0100937+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T14:29:11.0529292+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T14:33:46.6188705+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T14:33:46.6584585+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T14:35:17.0906057+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T14:35:17.1418774+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T14:41:10.6293201+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T14:41:10.6615052+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T14:43:49.5304836+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T14:43:49.5686524+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T14:58:38.7314772+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T14:58:38.7777095+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T15:05:09.2245255+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T15:05:09.2573474+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T15:18:18.4452955+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T15:18:18.4773058+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T15:18:48.5942515+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T15:18:48.6367797+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T15:18:48.7950557+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"2 Get data by category ID and validate name"}}
+{"Timestamp":"2023-08-24T15:18:48.8468225+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"3 Update category by ID and validate name"}}
+{"Timestamp":"2023-08-24T15:18:48.9195677+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"4 Delete category by ID and validate the deletion"}}
+{"Timestamp":"2023-08-24T15:18:49.0077891+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"5 NOT OK Case - Delete the non exisitng categeory"}}
+{"Timestamp":"2023-08-24T15:18:49.0364953+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"6 NOT OK Case - Create a category using exisiting Name"}}
+{"Timestamp":"2023-08-24T15:18:49.1530108+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"7 Get all category data and validate the datatypes"}}
+{"Timestamp":"2023-08-24T15:31:04.2620419+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T15:31:04.2902375+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T20:40:50.3191854+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T20:40:52.6373323+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T20:47:42.3343834+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T20:47:42.3637733+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T20:51:59.5986703+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T20:51:59.6265137+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T21:31:32.1890214+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T21:31:32.2259138+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T21:31:32.2680143+02:00","Level":"Information","MessageTemplate":"passRestSharp.RestRequest"}
+{"Timestamp":"2023-08-24T21:31:32.3735773+02:00","Level":"Information","MessageTemplate":"passProfileStudioAPI.PageObjects.CategoryPostData"}
+{"Timestamp":"2023-08-24T21:42:42.2790399+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T21:42:42.3062730+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T21:46:43.7761339+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T21:46:43.8021771+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T21:46:43.9021716+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"2 Get data by category ID and validate name"}}
+{"Timestamp":"2023-08-24T21:46:43.9119057+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"3 Update category by ID and validate name"}}
+{"Timestamp":"2023-08-24T21:46:43.9265443+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"4 Delete category by ID and validate the deletion"}}
+{"Timestamp":"2023-08-24T21:46:43.9402509+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"5 NOT OK Case - Delete the non exisitng categeory"}}
+{"Timestamp":"2023-08-24T21:46:43.9466230+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"6 NOT OK Case - Create a category using exisiting Name"}}
+{"Timestamp":"2023-08-24T21:46:43.9659608+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"7 Get all category data and validate the datatypes"}}
+{"Timestamp":"2023-08-24T21:47:45.4128365+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T21:47:45.4385476+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T21:47:45.5296672+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"2 Get data by category ID and validate name"}}
+{"Timestamp":"2023-08-24T21:47:45.5395217+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"3 Update category by ID and validate name"}}
+{"Timestamp":"2023-08-24T21:47:45.5527786+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"4 Delete category by ID and validate the deletion"}}
+{"Timestamp":"2023-08-24T21:47:45.5646015+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"5 NOT OK Case - Delete the non exisitng categeory"}}
+{"Timestamp":"2023-08-24T21:47:45.5705828+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"6 NOT OK Case - Create a category using exisiting Name"}}
+{"Timestamp":"2023-08-24T21:47:45.5851608+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"7 Get all category data and validate the datatypes"}}
+{"Timestamp":"2023-08-24T21:48:46.2636216+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T21:48:46.2900510+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T21:48:46.3823862+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"2 Get data by category ID and validate name"}}
+{"Timestamp":"2023-08-24T21:48:46.3928162+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"3 Update category by ID and validate name"}}
+{"Timestamp":"2023-08-24T21:48:46.4078258+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"4 Delete category by ID and validate the deletion"}}
+{"Timestamp":"2023-08-24T21:48:46.4185731+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"5 NOT OK Case - Delete the non exisitng categeory"}}
+{"Timestamp":"2023-08-24T21:48:46.4250112+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"6 NOT OK Case - Create a category using exisiting Name"}}
+{"Timestamp":"2023-08-24T21:48:46.4383897+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"7 Get all category data and validate the datatypes"}}
+{"Timestamp":"2023-08-24T21:51:22.0152750+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T21:51:22.0418394+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T21:51:22.1339218+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"2 Get data by category ID and validate name"}}
+{"Timestamp":"2023-08-24T21:51:22.1415660+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"3 Update category by ID and validate name"}}
+{"Timestamp":"2023-08-24T21:51:22.1546057+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"4 Delete category by ID and validate the deletion"}}
+{"Timestamp":"2023-08-24T21:51:22.1654606+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"5 NOT OK Case - Delete the non exisitng categeory"}}
+{"Timestamp":"2023-08-24T21:51:22.1710538+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"6 NOT OK Case - Create a category using exisiting Name"}}
+{"Timestamp":"2023-08-24T21:51:22.1837030+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"7 Get all category data and validate the datatypes"}}
+{"Timestamp":"2023-08-24T21:55:12.8181804+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T21:55:12.8455127+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T21:55:12.9349249+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"2 Get data by category ID and validate name"}}
+{"Timestamp":"2023-08-24T21:55:12.9425549+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"3 Update category by ID and validate name"}}
+{"Timestamp":"2023-08-24T21:55:12.9556761+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"4 Delete category by ID and validate the deletion"}}
+{"Timestamp":"2023-08-24T21:55:12.9682619+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"5 NOT OK Case - Delete the non exisitng categeory"}}
+{"Timestamp":"2023-08-24T21:55:12.9740616+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"6 NOT OK Case - Create a category using exisiting Name"}}
+{"Timestamp":"2023-08-24T21:55:12.9938781+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"7 Get all category data and validate the datatypes"}}
+{"Timestamp":"2023-08-24T21:56:21.0242302+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T21:56:21.0528337+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T21:56:21.1446310+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"2 Get data by category ID and validate name"}}
+{"Timestamp":"2023-08-24T21:56:21.1525954+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"3 Update category by ID and validate name"}}
+{"Timestamp":"2023-08-24T21:56:21.1635915+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"4 Delete category by ID and validate the deletion"}}
+{"Timestamp":"2023-08-24T21:56:21.1742286+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"5 NOT OK Case - Delete the non exisitng categeory"}}
+{"Timestamp":"2023-08-24T21:56:21.1800079+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"6 NOT OK Case - Create a category using exisiting Name"}}
+{"Timestamp":"2023-08-24T21:56:21.1940603+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"7 Get all category data and validate the datatypes"}}
+{"Timestamp":"2023-08-24T22:02:57.7322248+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T22:02:57.7587064+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T22:02:57.8515640+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"2 Get data by category ID and validate name"}}
+{"Timestamp":"2023-08-24T22:02:57.8585483+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"3 Update category by ID and validate name"}}
+{"Timestamp":"2023-08-24T22:02:57.8717952+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"4 Delete category by ID and validate the deletion"}}
+{"Timestamp":"2023-08-24T22:02:57.8831347+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"5 NOT OK Case - Delete the non exisitng categeory"}}
+{"Timestamp":"2023-08-24T22:02:57.8890645+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"6 NOT OK Case - Create a category using exisiting Name"}}
+{"Timestamp":"2023-08-24T22:02:57.9039636+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"7 Get all category data and validate the datatypes"}}
+{"Timestamp":"2023-08-24T22:05:32.5317595+02:00","Level":"Information","MessageTemplate":"Select feature file {0} to run","Properties":{"0":"CategoryE2E"}}
+{"Timestamp":"2023-08-24T22:05:32.5595940+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"1 Check data after POST call"}}
+{"Timestamp":"2023-08-24T22:05:32.6548945+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"2 Get data by category ID and validate name"}}
+{"Timestamp":"2023-08-24T22:05:32.6638308+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"3 Update category by ID and validate name"}}
+{"Timestamp":"2023-08-24T22:05:32.6777571+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"4 Delete category by ID and validate the deletion"}}
+{"Timestamp":"2023-08-24T22:05:32.6911325+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"5 NOT OK Case - Delete the non exisitng categeory"}}
+{"Timestamp":"2023-08-24T22:05:32.6990764+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"6 NOT OK Case - Create a category using exisiting Name"}}
+{"Timestamp":"2023-08-24T22:05:32.7128632+02:00","Level":"Information","MessageTemplate":"Select scenario {0} to run","Properties":{"0":"7 Get all category data and validate the datatypes"}}

@@ -2,13 +2,15 @@ using NUnit.Framework;
 using RestSharp;
 using Newtonsoft.Json;
 using ProfileStudioAPI.PageObjects;
-using ProfileStudioAPI.Utilities;
 using ProfileStudioAPI.Drivers;
 using System.Net;
 using Newtonsoft.Json.Linq;
 using ProfileStudioAPI.support;
-using HooksForAll;
-using RazorEngine.Compilation.ImpromptuInterface.InvokeExt;
+using AventStack.ExtentReports;
+using Serilog;
+using AventStack.ExtentReports.Gherkin.Model;
+using ExtentReportHooks;
+using ProfileStudioAPI.Utilities;
 
 namespace ProfileStudioAPI.StepDefinitions
 {
@@ -16,6 +18,7 @@ namespace ProfileStudioAPI.StepDefinitions
     public class CategoryE2E
     {
         public RestClient restClient;
+        private readonly Hooks _extentReport;
         public RestRequest restRequest;
         public RestResponse restResponse;
         public CategoryPostData postData;
@@ -27,8 +30,18 @@ namespace ProfileStudioAPI.StepDefinitions
         public string updatedName;
         public string requestDetails;
         public string responseDetails;
+        public static ExtentReports extent;
+        public static ExtentTest feature;
+        public static ExtentTest scenario, step;
+        public ScenarioContext _scenarioContext;
+        public string requestJson;
+        public string responseJson;
 
-
+        public CategoryE2E(Hooks extentReport)
+        {
+            _extentReport = extentReport;
+            restClient = new RestClient(ApiUrl.BaseUrl);
+        }
 
         public CategoryE2E()
         {
@@ -42,44 +55,52 @@ namespace ProfileStudioAPI.StepDefinitions
         {
             try
             {
-                categoryName = CategoryTestDataGenerator.GenerateRandomCategoryName();
-                categoryId = CategoryTestDataGenerator.GenerateRandomCategoryId();
+                categoryName = TestDataGenerator.GenerateRandomCategoryName();
+                categoryId = TestDataGenerator.GenerateRandomCategoryId();
 
-                categoryData = CategoryDataGenerator.GenerateCategoryData(categoryName, categoryId);
+                categoryData = CategoryRequestBuilder.GenerateCategoryData(categoryName, categoryId);
 
                 var request = CategoryRequestBuilder.CategoryPostRequest(categoryData);
 
+                requestJson = request.Parameters.FirstOrDefault(p => p.Type == ParameterType.RequestBody)?.Value?.ToString();
+                _extentReport.SetRequestJson(requestJson);
+
                 restResponse = (RestResponse)restClient.Execute(request);
+
+                responseJson = restResponse.Content;
+                _extentReport.SetResponseJson(responseJson);
 
                 JObject obs = JObject.Parse(restResponse.Content);
                 Assert.That(obs["name"].ToString(), Is.EqualTo(categoryName), "Category name is not matching");
 
                 postData = JsonConvert.DeserializeObject<CategoryPostData>(restResponse.Content);
 
-                Hooks.SetCategoryInfo(postData.categoryId, postData.name);
+                ScenarioPassingMethods.SetCategoryInfo(postData.categoryId, postData.name);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception during POST request: " + ex.Message);
-                throw; 
+                throw;
             }
         }
 
-        [Then(@"user gets a success response")]
-        public void ThenUserGetsASuccessResponse()
-        {
-            Assert.True(restResponse.IsSuccessful);
-            Assert.AreEqual(HttpStatusCode.Created, restResponse.StatusCode);
-            
-        }
+            [Then(@"user gets a success response")]
+            public void ThenUserGetsASuccessResponse()
+            {
+                Assert.True(restResponse.IsSuccessful);
+                _extentReport.ReportLog("The response indicates success (HTTP 201 Created).");
+                Assert.AreEqual(HttpStatusCode.Created, restResponse.StatusCode);
 
-        [Then(@"the response contains the correct name")]
-        public void ThenTheResponseContainsTheCorrectNameAndID()
-        {
-            Assert.AreEqual(postData.name, categoryName);
-            Assert.AreEqual(postData.categoryId, categoryId);
-            
-        }
+
+            }
+
+            [Then(@"the response contains the correct name")]
+            public void ThenTheResponseContainsTheCorrectNameAndID()
+            {
+                Assert.AreEqual(postData.name, categoryName);
+                Assert.AreEqual(postData.categoryId, categoryId);
+
+            }
 
 
         // Do an GET to validate the information
@@ -89,11 +110,12 @@ namespace ProfileStudioAPI.StepDefinitions
         {
             try
             {
-                int categoryId = Hooks.GetCategoryId();
+                int categoryId = ScenarioPassingMethods.GetCategoryId();
                 var request = CategoryRequestBuilder.CategoryGetRequest(apiUrl, categoryId);
-
+                
                 restResponse = (RestResponse)restClient.Execute(request);
-
+                responseJson = restResponse.Content;
+                _extentReport.SetResponseJson(responseJson);
 
                 Assert.True(restResponse.IsSuccessful);
                 Assert.AreEqual(HttpStatusCode.OK, restResponse.StatusCode);
@@ -101,14 +123,14 @@ namespace ProfileStudioAPI.StepDefinitions
             catch (Exception ex)
             {
                 Console.WriteLine("Exception during GET request: " + ex.Message);
-                throw; 
+                throw;
             }
         }
 
         [Then(@"the Get response contains the correct name and category ID")]
         public void ThenTheGetResponseContainsTheCorrectNameAndID()
         {
-            string categoryName = Hooks.GetCategoryName();
+            string categoryName = ScenarioPassingMethods.GetCategoryName();
             var obs = JObject.Parse(restResponse.Content);
             Assert.That(obs["name"].ToString(), Is.EqualTo(categoryName), "Category name is not matching");
         }
@@ -121,21 +143,22 @@ namespace ProfileStudioAPI.StepDefinitions
         {
             try
             {
-                categoryId = Hooks.GetCategoryId();
-                updatedName = CategoryTestDataGenerator.GenerateRandomCategoryName();
+                categoryId = ScenarioPassingMethods.GetCategoryId();
+                updatedName = TestDataGenerator.GenerateRandomCategoryName();
 
-                categoryData = CategoryDataGenerator.GenerateUpdatedCategoryData(updatedName, categoryId);
+                categoryData = CategoryRequestBuilder.GenerateUpdatedCategoryData(updatedName, categoryId);
 
                 var request = CategoryRequestBuilder.CategoryPutRequest(categoryData);
                 request.Resource += "/" + categoryId;
+                requestJson = request.Parameters.FirstOrDefault(p => p.Type == ParameterType.RequestBody)?.Value?.ToString();
+                _extentReport.SetRequestJson(requestJson);
 
                 restResponse = (RestResponse)restClient.Execute(request);
-
 
                 Assert.True(restResponse.IsSuccessful);
                 Assert.AreEqual(HttpStatusCode.NoContent, restResponse.StatusCode);
 
-                Hooks.SetCategoryInfo(categoryId, updatedName); // Use categoryName here
+                ScenarioPassingMethods.SetCategoryInfo(categoryId, updatedName); // Use categoryName here
 
             }
             catch (Exception ex)
@@ -150,13 +173,14 @@ namespace ProfileStudioAPI.StepDefinitions
         {
             try
             {
-                int categoryId = Hooks.GetCategoryId();
-                string updatedName = Hooks.GetCategoryName();
+                int categoryId = ScenarioPassingMethods.GetCategoryId();
+                string updatedName = ScenarioPassingMethods.GetCategoryName();
 
                 var request = CategoryRequestBuilder.CategoryGetRequest(apiUrl, categoryId);
 
                 restResponse = (RestResponse)restClient.Execute(request);
-
+                responseJson = restResponse.Content;
+                _extentReport.SetResponseJson(responseJson);
 
                 Assert.True(restResponse.IsSuccessful);
                 Assert.AreEqual(HttpStatusCode.OK, restResponse.StatusCode);
@@ -176,12 +200,11 @@ namespace ProfileStudioAPI.StepDefinitions
         [Given(@"the user sends a Delete request with the category ID and do an GET to confirm")]
         public void GivenTheUserSendsADeleteRequestWithTheCategoryIDAndDoAnGETToConfirm()
         {
-            int categoryId = Hooks.GetCategoryId();
+            int categoryId = ScenarioPassingMethods.GetCategoryId();
 
             restRequest = CategoryRequestBuilder.CategoryDeleteRequest(apiUrl, categoryId);
 
             restResponse = (RestResponse)restClient.Execute(restRequest);
-
 
             Assert.True(restResponse.IsSuccessful);
             Assert.AreEqual(HttpStatusCode.NoContent, restResponse.StatusCode);
@@ -201,12 +224,13 @@ namespace ProfileStudioAPI.StepDefinitions
         [Given(@"the user sends a Delete request with the non exisiting category ID  and validate")]
         public void GivenTheUserSendsADeleteRequestWithTheNonExisitingCategoryIDAndValidate()
         {
-            int categoryId = Hooks.GetCategoryId();
+            int categoryId = ScenarioPassingMethods.GetCategoryId();
 
             restRequest = CategoryRequestBuilder.CategoryDeleteRequest(apiUrl, categoryId);
-
+           
             restResponse = (RestResponse)restClient.Execute(restRequest);
-
+            responseJson = restResponse.Content;
+            _extentReport.SetResponseJson(responseJson);
 
             Assert.False(restResponse.IsSuccessful);
             Assert.AreEqual(HttpStatusCode.NotFound, restResponse.StatusCode);
@@ -220,13 +244,19 @@ namespace ProfileStudioAPI.StepDefinitions
             try
             {
                 categoryName = "Schneider Electric";
-                categoryId = CategoryTestDataGenerator.GenerateRandomCategoryId();
+                categoryId = TestDataGenerator.GenerateRandomCategoryId();
 
-                categoryData = CategoryDataGenerator.GenerateCategoryData(categoryName, categoryId);
+                categoryData = CategoryRequestBuilder.GenerateCategoryData(categoryName, categoryId);
 
                 var request = CategoryRequestBuilder.CategoryPostRequest(categoryData);
+
+                requestJson = request.Parameters.FirstOrDefault(p => p.Type == ParameterType.RequestBody)?.Value?.ToString();
+                _extentReport.SetRequestJson(requestJson);
+
                 restResponse = (RestResponse)restClient.Execute(request);
 
+                //responseJson = restResponse.Content;
+                //_extentReport.SetResponseJson(responseJson);
 
                 Assert.AreEqual(HttpStatusCode.Conflict, restResponse.StatusCode);
 
@@ -255,6 +285,8 @@ namespace ProfileStudioAPI.StepDefinitions
                 var request = CategoryRequestBuilder.CategoryGetAllRequest(apiUrl);
 
                 restResponse = (RestResponse)restClient.Execute(request);
+                responseJson = restResponse.Content;
+                _extentReport.SetResponseJson(responseJson);
 
 
                 Assert.True(restResponse.IsSuccessful);

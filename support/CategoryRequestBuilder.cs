@@ -1,11 +1,32 @@
-﻿using HooksForAll;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using RestSharp;
 
 namespace ProfileStudioAPI.support
 {
     public static class CategoryRequestBuilder
     {
+        public static string GenerateCategoryData(string categoryName, int categoryId)
+        {
+            var categoryData = new
+            {
+                name = categoryName,
+                categoryId,
+            };
+
+            return JsonConvert.SerializeObject(categoryData);
+        }
+
+        public static string GenerateUpdatedCategoryData(string UpdatedcategoryName, int categoryId)
+        {
+            var updatedCategoryData = new
+            {
+                name = UpdatedcategoryName,
+                categoryId
+            };
+
+            return JsonConvert.SerializeObject(updatedCategoryData);
+        }
+
         public static RestRequest CategoryPostRequest(string categoryData)
         {
             var request = new RestRequest("/Category", Method.Post);

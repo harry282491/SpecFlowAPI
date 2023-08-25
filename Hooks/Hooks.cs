@@ -1,129 +1,166 @@
 ﻿using AventStack.ExtentReports;
-using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.Reporter;
-using System.Reflection;
-using TechTalk.SpecFlow;
+using AventStack.ExtentReports.Reporter.Configuration;
+using relativePathUtility = ProfileStudioAPI.Utilities.RelativePathUtility;
+using Serilog.Core;
+using Serilog;
+using Serilog.Formatting.Json;
+using Log = Serilog.Log;
+using ProfileStudioAPI.Drivers;
+using AventStack.ExtentReports.Gherkin.Model;
 using TechTalk.SpecFlow.Bindings;
-using System;
-using System.IO;
-using RestSharp;
 
-namespace HooksForAll
+namespace ExtentReportHooks
 {
     [Binding]
     public class Hooks
     {
-        private static int categoryId;
-        private static string categoryName;
 
-        private readonly ScenarioContext _scenarioContext;
-        private readonly FeatureContext _featureContext;
-        private static ExtentReports _extentReports;
-        private static ExtentTest _scenario;
-        private static string requestDetails;
-        private static string responseDetails;
-        private static string validationDetails;
+        public static ExtentReports extent;
+        public static ExtentTest feature;
+        public static ExtentTest scenario, step;
+        public ExtentTest _test;
+        public ScenarioContext _scenarioContext;
 
 
-        public Hooks(ScenarioContext scenarioContext, FeatureContext featureContext)
+        public string requestJson;
+        public string responseJson;
+
+        public string requestUrl; // Add this variable
+
+        public void SetRequestUrl(string url) // Add this method
+        {
+            requestUrl = url;
+        }
+
+        public void SetRequestJson(string json)
+        {
+            requestJson = json;
+        }
+
+        public void SetResponseJson(string json)
+        {
+            responseJson = json;
+        }
+
+        public void ReportLog(string message)
+        {
+            if (_test != null)
+            {
+                _test.Info(message);
+            }
+            Log.Information(message);
+            Console.WriteLine(message);
+        }
+
+
+        public Hooks(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
-            _featureContext = featureContext;
         }
-
 
         [BeforeTestRun]
-        public static void InitializeExtentReports()
+        public static void BeforeTestRun()
         {
-            string reportsFolderPath = @"C:\SpecFlowProject-API\Reports\";
-            var extentReportPath = Path.Combine(reportsFolderPath, "ExtentReport.html");
 
-            _extentReports = new ExtentReports();
-            var spark = new ExtentSparkReporter(extentReportPath);
-            _extentReports.AttachReporter(spark);
+            string reportpath = Path.Combine(relativePathUtility.AssemblyDirectory, @"..\..\..\Reports\" + "ProfileStudioAPI_" + DateTime.Now.ToString("yyyyMMd-HHmmss") + "\\");
+            extent = new ExtentReports();
+
+            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(reportpath);
+            htmlReporter.Config.Theme = Theme.Dark;
+            htmlReporter.Config.DocumentTitle = "ProfileStudio_API Test Case Report";
+            htmlReporter.Config.ReportName = "ProfileStudio_API Test Case Report";
+            extent.AttachReporter(htmlReporter);
+
+            LoggingLevelSwitch levelSwitch = new LoggingLevelSwitch(Serilog.Events.LogEventLevel.Debug);
+            Log.Logger = new LoggerConfiguration().MinimumLevel.ControlledBy(levelSwitch).
+                WriteTo.File(new JsonFormatter(), reportpath + @"..\..\Logs\ProfileStudiologfile_",
+                rollingInterval: RollingInterval.Day).CreateLogger();        // generate logs in json format
+
         }
 
-        [BeforeScenario()]
-        public void ProfileStudioReport()
+        [BeforeFeature]
+        public static void BeforeFeature(FeatureContext context)
         {
-            var feature = _extentReports.CreateTest<Feature>(_featureContext.FeatureInfo.Title);
-            _scenario = feature.CreateNode<Scenario>(_scenarioContext.ScenarioInfo.Title);
+            feature = extent.CreateTest(context.FeatureInfo.Title);
+            Log.Information("Select feature file {0} to run", context.FeatureInfo.Title);
         }
 
+        [BeforeScenario]
+        public void BeforeScenario(ScenarioContext context)
+        {
+            scenario = feature.CreateNode(context.ScenarioInfo.Title);
+            _test = scenario;
+            Log.Information("Select scenario {0} to run", context.ScenarioInfo.Title);
+        }
+
+        [BeforeStep]
+        public void BeforeStep()
+        {
+            step = scenario; // Initialize step if it's null
+        }
         [AfterStep]
         public void AfterStep()
         {
-            if (_scenarioContext.TestError == null)
-                switch (_scenarioContext.StepContext.StepInfo.StepDefinitionType)
-                {
-                    case StepDefinitionType.Given:
-                        _scenario.CreateNode<Given>(_scenarioContext.StepContext.StepInfo.Text);
-                        break;
-                    case StepDefinitionType.When:
-                        _scenario.CreateNode<When>(_scenarioContext.StepContext.StepInfo.Text);
-                        break;
-                    case StepDefinitionType.Then:
-                        _scenario.CreateNode<Then>(_scenarioContext.StepContext.StepInfo.Text);
-                        break;
-                    default:
-                        break;
-                }
-            else
-                switch (_scenarioContext.StepContext.StepInfo.StepDefinitionType)
-                {
-                    case StepDefinitionType.Given:
-                        _scenario.CreateNode<Given>(_scenarioContext.StepContext.StepInfo.Text).Fail();
-                        break;
-                    case StepDefinitionType.When:
-                        _scenario.CreateNode<When>(_scenarioContext.StepContext.StepInfo.Text).Fail();
-                        break;
-                    case StepDefinitionType.Then:
-                        _scenario.CreateNode<Then>(_scenarioContext.StepContext.StepInfo.Text).Fail();
-                        break;
-                    default:
-                        break;
-                }
-
-            // Include request and response details if they are available
-            if (!string.IsNullOrEmpty(requestDetails))
+            if (step != null)
             {
-                _scenario.CreateNode<And>("Request and Response Details").Info(requestDetails + "\n" + responseDetails);
-                requestDetails = null; // Reset the request details after including them in the report
+                if (_scenarioContext.TestError == null)
+                {
+                    var stepInfo = _scenarioContext.StepContext.StepInfo;
+                    switch (stepInfo.StepDefinitionType)
+                    {
+                        case StepDefinitionType.Given:
+                            step = scenario.CreateNode<Given>(stepInfo.Text);
+                            break;
+                        case StepDefinitionType.When:
+                            scenario.CreateNode<When>(stepInfo.Text);
+                            break;
+                        case StepDefinitionType.Then:
+                            scenario.CreateNode<Then>(stepInfo.Text);
+                            break;
+                        default:
+                            break;
+                    }
+                    LogRequestAndResponse();
+                }
+                else
+                {
+                    var stepInfo = _scenarioContext.StepContext.StepInfo;
+                    switch (stepInfo.StepDefinitionType)
+                    {
+                        case StepDefinitionType.Given:
+                            step = scenario.CreateNode<Given>(stepInfo.Text).Fail(_scenarioContext.TestError.Message);
+                            break;
+                        case StepDefinitionType.When:
+                            step = scenario.CreateNode<When>(stepInfo.Text).Fail(_scenarioContext.TestError.Message);
+                            break;
+                        case StepDefinitionType.Then:
+                            step = scenario.CreateNode<Then>(stepInfo.Text).Fail(_scenarioContext.TestError.Message);
+                            break;
+                        default:
+                            break;
+                    }
+                }
             }
+            step = null;
         }
 
-
-        [AfterTestRun]
-        public static void CloseExtentReports()
+        private void LogRequestAndResponse()
         {
-            _extentReports.Flush();
+            step.Info("Request JSON: " + requestJson);
+            step.Info("Response JSON: " + responseJson);
         }
 
-
-        public static void SetCategoryInfo(int id, string name) // Update this method
+        [AfterScenario]
+        public void AfterScenario()
         {
-            categoryId = id;
-            categoryName = name;
+            //TODO: implement logic that has to run after executing each scenario
         }
 
-        public static void AddRequestAndResponseDetails(string requestDetails, string responseDetails)
+        [AfterFeature]
+        public static void AfterFeature()
         {
-            // Get the current scenario node
-            ExtentTest scenarioNode = _scenario;
-
-            // Add request and response details to the scenario node
-            scenarioNode.Info(requestDetails);
-            scenarioNode.Info(responseDetails);
-        }
-
-        public static int GetCategoryId()
-        {
-            return categoryId;
-        }
-
-        public static string GetCategoryName() // Add this method
-        {
-            return categoryName;
+            extent.Flush();
         }
     }
 }
